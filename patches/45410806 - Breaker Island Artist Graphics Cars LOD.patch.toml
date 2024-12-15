@@ -1,0 +1,34 @@
+title_name = "Burnout Paradise"
+title_id = "45410806"
+hash = "0CC027FC408913C2"
+media_id = "00000000"
+
+[[patch]]
+    name = "Burnout Paradise Breaker Island Graphics Boost Increase Cars LODs Distance"
+    author = "Adriwin"
+    is_enabled = true
+
+    # Vehicle LOD0 Override Distances (changed to 50 from 10 default)
+	[[patch.be32]]
+        address = 0x82F307B4
+        value = 0x42480000
+
+    # Vehicle LOD1 Override Distances (changed to 110 from 22 default)
+	[[patch.be32]]
+        address = 0x82F307B8
+        value = 0x42dc0000
+
+    # Vehicle LOD2 Override Distances (changed to 175 from 35 default)
+	[[patch.be32]]
+        address = 0x82F307BC
+        value = 0x432f0000
+
+    # Vehicle LOD3 Override Distances (changed to 250 from 50 default)
+	[[patch.be32]]
+        address = 0x82F307C0
+        value = 0x437a0000
+
+    # Vehicle LOD4 Override Distances (changed to 350 from 70 default)
+	[[patch.be32]]
+        address = 0x82F307C4
+        value = 0x43af0000
