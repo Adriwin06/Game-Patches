@@ -27,6 +27,8 @@ Disable the FPS counter as well as the three thread monitors.
 ### Increased Cars LODs Distance
 Increase the LODs distance for the vehicles including traffic. It has only been increased by a factor of 5x because the game really don't like too high values for this.
 
+⚠️ **Warning**: This patch can greatly affect the game performance depending on how you run the game without the patch. And higher values than 5x can greatly decrease the performance even on high-end hardware: the game is not optimized for this.
+
 <table align= "center">
   <tr>
     <td width="50%">
@@ -39,3 +41,6 @@ Increase the LODs distance for the vehicles including traffic. It has only been 
     </td>
   </tr>
 </table>
+
+### Forced Random Soundtrack Play Order
+By default, the game plays the soundtrack in the sequential order, and if you change your settings to random and relaunch the game, it default back to sequential. This is a problem with all user settings, not just play order (I plan to fix this). This patch forces the game to play the songs in a **random order** *regardless of the settings*.

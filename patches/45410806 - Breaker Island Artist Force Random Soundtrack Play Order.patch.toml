@@ -1,0 +1,15 @@
+title_name = "Burnout Paradise"
+title_id = "45410806"
+hash = "0CC027FC408913C2"
+media_id = "00000000"
+
+[[patch]]
+    name = "Burnout Paradise Breaker Island Artist Force Random Soundtrack Play Order"
+    author = "Adriwin"
+    is_enabled = true
+
+    # Add an unconditional branch to force random play order in BrnSound::Logic::MusicEffect::EaTraxData::SelectSong
+    # This bypasses the check for a1[16] equals 1 (random order, and 0 for sequential) and ensures the game always uses random play order
+    [[patch.be32]]  
+        address = 0x8269D988
+        value = 0x48000008
