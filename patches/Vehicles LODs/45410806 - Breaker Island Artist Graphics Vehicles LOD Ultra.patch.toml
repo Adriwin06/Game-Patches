@@ -4,9 +4,10 @@ hash = "0CC027FC408913C2"
 media_id = "00000000"
 
 [[patch]]
-    name = "Burnout Paradise Breaker Island Graphics Boost Increase Vehicles LODs Distance"
+    name = "Burnout Paradise Breaker Island Graphics Boost Vehicles LODs Ultra"
+    description = "This patch changes the LOD distances for vehicles to higher values for maximum quality."
     author = "Adriwin"
-    is_enabled = true
+    is_enabled = false
 
     # Vehicle LOD0 Override Distances (changed to 50 from 10 default)
 	[[patch.be32]]

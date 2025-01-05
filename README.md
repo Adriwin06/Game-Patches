@@ -25,18 +25,25 @@ Disable the FPS counter as well as the three thread monitors.
 </table>
 
 ### Increased Cars LODs Distance
-Increase the LODs distance for the vehicles including traffic. It has only been increased by a factor of 5x because the game really don't like too high values for this.
 
-⚠️ **Warning**: This patch can greatly affect the game performance depending on how you run the game without the patch. And higher values than 5x can greatly decrease the performance even on high-end hardware: the game is not optimized for this.
+Increase the LODs distance for the vehicles including traffic. Multiple patch versions are available to balance between performance and visual quality:
+
+- **Ultra:** Maximum quality with 5x increase. May affect game performance on some systems.
+- **High:** Significant quality boost with higher LOD distances.
+- **Medium:** Balanced option for improved visuals without substantial performance loss.
+- **Low:** Lower LOD distances for better performance, suitable for systems struggling to maintain 60 FPS.
+- **Potato:** Minimal LOD distances for maximum performance at the cost of visual quality.
+
+⚠️ **Warning**: The `High` and `Ultra` patches can greatly affect the game performance depending on how you run the game without the patch. And higher values than 5x (which is ultra here) can greatly decrease the performance even on high-end hardware: the game is not optimized for this.
 
 <table align= "center">
   <tr>
     <td width="50%">
-      <h2 align="center">Before</h2>
+      <h2 align="center">Before Ultra</h2>
         <img src="https://github.com/user-attachments/assets/09656ff0-828c-4473-8e7f-fcf7c595e91c">
     </td>
     <td width="50%">
-      <h2 align="center">After</h2>
+      <h2 align="center">After Ultra</h2>
         <img src="https://github.com/user-attachments/assets/1c8c5a4a-7a02-48eb-842f-2f34188808c3">
     </td>
   </tr>
