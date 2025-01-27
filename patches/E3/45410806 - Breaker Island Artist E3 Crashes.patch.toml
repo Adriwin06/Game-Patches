@@ -1,0 +1,50 @@
+title_name = "Burnout Paradise"
+title_id = "45410806"
+hash = "0CC027FC408913C2"
+media_id = "00000000"
+
+[[patch]]
+    name = "Burnout Paradise Breaker Island Artist E3 Crashes"
+    description = "This patch changes crash physics to be more like the E3 2007 demo."
+    author = "Adriwin"
+    is_enabled = true
+
+    # NOP the instruction at .text:82C5C5C8 that overwrites the Angular Velocity
+    [[patch.be32]]
+        address = 0x82C5C5C8
+        value = 0x60000000
+
+    # NOP the instruction at .text:82C5C5CC that overwrites the Angular Velocity
+    [[patch.be32]]
+        address = 0x82C5C5CC
+        value = 0x60000000
+
+    # NOP the instruction at .text:82C5C5D0 that overwrites the Angular Velocity
+    [[patch.be32]]
+        address = 0x82C5C5D0
+        value = 0x60000000
+
+    # NOP the instruction at .text:82C5C5D4 that overwrites the Angular Velocity
+    [[patch.be32]]
+        address = 0x82C5C5D4
+        value = 0x60000000
+
+    # NOP the instruction at .text:82C5C5E8 that overwrites the Angular Velocity
+    [[patch.be32]]
+        address = 0x82C5C5E8
+        value = 0x60000000
+
+    # Set Max X Angular Velocity (float)
+    [[patch.be32]]
+        address = 0x82FB9DA0
+        value = 0x40eccccd  # 7.4 in IEEE-754
+
+    # Set Max Y Angular Velocity (float)
+    [[patch.be32]]
+        address = 0x82FB9DA4
+        value = 0x411b3333  # 9.7 in IEEE-754
+
+    # Set Max Z Angular Velocity (float)
+    [[patch.be32]]
+        address = 0x82FB9DA8
+        value = 0x411ccccd  # 9.8 in IEEE-754

@@ -1,11 +1,13 @@
 # Game-Patches
 Games patches I wrote. Currently focused on Burnout Paradise.
 
-## Introduction
+# Introduction
 I'm still learning Reverse Engineering with IDA Pro, so it might only be small changes for now, and maybe not done in the best way, but this can only improve in the future 😊
 
-## Patches
+# Patches
 In the `BURNOUT_ARTIST.XEX` executable of the [Jan 30,2008 prototype](https://hiddenpalace.org/Burnout_Paradise_(Jan_30,_2008_prototype)) of Burnout Paradise
+
+## Remove/Fix Artist Build Related Things
 ###  Disable Performances Monitors 🟥🟩🟩
 Disable the FPS counter as well as the three thread monitors.
 
@@ -24,6 +26,10 @@ Disable the FPS counter as well as the three thread monitors.
     </tr>
 </table>
 
+### Forced Random Soundtrack Play Order
+By default, the game plays the soundtrack in the sequential order, and if you change your settings to random and relaunch the game, it default back to sequential. This is a problem with all user settings, not just play order (I plan to fix this). This patch forces the game to play the songs in a **random order** *regardless of the settings*.
+
+## Improve Graphics
 ### Increased Cars LODs Distance
 
 Increase the LODs distance for the vehicles including traffic. Multiple patch versions are available to balance between performance and visual quality:
@@ -49,5 +55,6 @@ Increase the LODs distance for the vehicles including traffic. Multiple patch ve
   </tr>
 </table>
 
-### Forced Random Soundtrack Play Order
-By default, the game plays the soundtrack in the sequential order, and if you change your settings to random and relaunch the game, it default back to sequential. This is a problem with all user settings, not just play order (I plan to fix this). This patch forces the game to play the songs in a **random order** *regardless of the settings*.
+## Restore E3 2007 things.
+### E3 Car Crashes
+Try to get closer to the spectacular E3 crashes by modifying the Max X/Y/Z Crasg Angular Velocity values.
