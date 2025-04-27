@@ -1,9 +1,6 @@
 # Game-Patches
 Games patches I wrote. Currently focused on Burnout Paradise.
 
-# Introduction
-I'm still learning Reverse Engineering with IDA Pro, so it might only be small changes for now, and maybe not done in the best way, but this can only improve in the future 😊
-
 # Patches
 In the `BURNOUT_ARTIST.XEX` executable of the [Jan 30,2008 prototype](https://hiddenpalace.org/Burnout_Paradise_(Jan_30,_2008_prototype)) of Burnout Paradise
 
@@ -57,4 +54,4 @@ Increase the LODs distance for the vehicles including traffic. Multiple patch ve
 
 ## Restore E3 2007 things.
 ### E3 Car Crashes
-Try to get closer to the spectacular E3 crashes by modifying the Max X/Y/Z Crasg Angular Velocity values.
+Try to get closer to the spectacular E3 crashes by modifying the Max X/Y/Z Crash Angular Velocity values.
